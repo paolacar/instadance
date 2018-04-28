@@ -1,0 +1,62 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* @font-face {
+  font-family: "Arial";
+  src: */
+
+header.main{
+  height: 80px;
+  border:1px solid #b9b3b3;
+  /* background-color: #1dcf92; */
+}
+
+.main .logo {
+  width: 30%;
+  height: inherit;
+  font-size: 40px;
+  /*line-height: 80px;*/
+  padding: 20px;
+  float: left;
+  /* background-color: rgb(157, 233, 31); */
+}
+
+.logo span{
+  font-size: 30px;
+}
+
+/* NAV */
+
+.main nav {
+  height: inherit;
+  /* background-color: rgb(17, 66, 190); */
+  float: right;
+  width: 30%;
+}
+
+.main nav > ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.main nav > ul > li{
+  width: 33.33%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  float: left;
+  height: inherit;
+}
+
+.main nav > ul > li > a:visited {
+  color:black;
+
+}
