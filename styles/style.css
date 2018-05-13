@@ -1,12 +1,19 @@
+@font-face {
+  font-family: "Univers";
+  src: local ("Univers");
+  src: url("../fonts/Univers.eot");
+  src:url("../fonts/Univers.woff"), url("../fonts/Univers.woff2"),url("../fonts/Univers.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Univers";
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* @font-face {
   font-family: "Arial";
@@ -59,4 +66,115 @@ header.main{
 .main nav > ul > li > a:visited {
   color:black;
 
+}
+
+/* section */
+
+.content{
+  width: 80%;
+  background-color: rgb(19, 235, 132);
+  margin: auto;
+}
+
+.content > section {
+  width: 60%;
+  height: 500px;
+  /* background-color: rgb(14, 34, 143); */
+  float: left;
+  padding: 20px;
+}
+
+.content > aside {
+  width: 40%;
+  height: 200px;
+  /* background-color: rgb(49, 179, 169); */
+  float: left;
+  padding: 40px;
+}
+
+/*  Aside*/
+
+.content > aside .img, .content > section > article .img{
+  width: 80px;
+  height: 80px;
+  background-color: #b91dcc;
+  border-radius: 50%;
+  background-image: url("../images/5.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  float: left;
+}
+
+.content > aside > h3 {
+  float: left;
+  line-height: 80px;
+  padding-left: 20px;
+}
+
+.content > aside > p{
+  padding: 10px;
+  color: #5d5a5a;
+  clear:both;
+}
+
+/* Section - article */
+
+.content > section> article {
+  /* background-color: rgb(117, 198, 21); */
+  border: 1px solid #757678;
+  border-radius: 10px;
+  margin-bottom:20px;
+}
+
+.content > section > article .img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.content > section > article .info {
+  line-height: 40px;
+  padding: 20px;
+}
+
+.content > section > article img {
+  display: block;
+  width: 100%;
+}
+
+.content > section > article .comment {
+  padding: 20px;
+  overflow: auto;
+}
+
+.content > section > article .icons {
+  float: left;
+  width: 200px;
+  font-size: 2em;
+
+}
+.content > section > article input[type="text"] {
+  display: block;
+  float: right;
+  border: none;
+  border: 1px solid #737475;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.1em;
+}
+
+
+@keyframes movebox {
+  0% { transform: translateX(0px);}
+  50% {transform: translateX(200px);}
+  100% { transform: translateX(0px);}
+
+
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(198, 38, 233);
+  animation: movebox 2s ease-out infinite;
 }
